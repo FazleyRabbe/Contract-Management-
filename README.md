@@ -95,5 +95,5 @@ using jsPDF. Additional utility libraries such as date-fns simplify date formatt
 <img width="712" height="498" alt="image" src="https://github.com/user-attachments/assets/2e205b42-c4b3-4c65-83ef-ce37ed378d7b" />
 
 
-<img width="691" height="464" alt="image" src="https://github.com/user-attachments/assets/cc9ba080-8bdc-4514-95c6-d88ebe24d406" />
+<img width="712" height="498" alt="image" src="https://github.com/user-attachments/assets/cc9ba080-8bdc-4514-95c6-d88ebe24d406" />
 
