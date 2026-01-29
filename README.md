@@ -94,6 +94,9 @@ using jsPDF. Additional utility libraries such as date-fns simplify date formatt
 
 <img width="712" height="498" alt="image" src="https://github.com/user-attachments/assets/2e205b42-c4b3-4c65-83ef-ce37ed378d7b" />
 
-
 <img width="712" height="498" alt="image" src="https://github.com/user-attachments/assets/cc9ba080-8bdc-4514-95c6-d88ebe24d406" />
+
+## ARCHITECTURE: 
+This architecture follows a standard three-tier design: a React single-page application sends HTTP REST API requests to an Express.js backend, which processes each request through a middleware layer for security and reliability. After middleware validation, the request is handled by route modules grouped by domain. The server uses Mongoose ODM as the data access layer to validate and map objects to MongoDB collections, 
+persisting core entities such as Users, Contracts, Offers, Providers, AuditLogs, and Reviews, then returns structured JSON responses back to the frontend for rendering dashboards and workflow steps.
 
