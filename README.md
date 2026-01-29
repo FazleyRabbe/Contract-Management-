@@ -100,3 +100,29 @@ using jsPDF. Additional utility libraries such as date-fns simplify date formatt
 This architecture follows a standard three-tier design: a React single-page application sends HTTP REST API requests to an Express.js backend, which processes each request through a middleware layer for security and reliability. After middleware validation, the request is handled by route modules grouped by domain. The server uses Mongoose ODM as the data access layer to validate and map objects to MongoDB collections, 
 persisting core entities such as Users, Contracts, Offers, Providers, AuditLogs, and Reviews, then returns structured JSON responses back to the frontend for rendering dashboards and workflow steps.
 
+<img width="1130" height="1190" alt="image" src="https://github.com/user-attachments/assets/b6f4ff55-1dc9-42d9-9f2d-46103a2ab957" />
+
+## WORKFLOW DIAGRAM: 
+This workflow diagram shows the contract lifecycle states and who acts at each step from creation to final approval. A contract starts in DRAFT when the client creates it, then moves to PENDING_PROCUREMENT after submission, where the Procurement Manager reviews it at this point, it can be REJECTED (end) or forwarded to PENDING_LEGAL for Legal Counsel review. From PENDING_LEGAL, it can again be REJECTED or moved to OPEN_FOR_OFFERS, where providers submit offers. Once offers are available, the coordinator selects one and changes the state to OFFER_SELECTED. The contract then moves to PENDING_FINAL_APPROVAL, where an Admin performs the final review; the outcome can be REJECTED or FINAL_APPROVED. Once FINAL_APPROVED, the contract is considered activated
+
+<img width="1125" height="1035" alt="image" src="https://github.com/user-attachments/assets/cda80a21-2087-4ca3-a3bc-c88f56d12b77" />
+
+## DEFAULT CREDENTIALS AS PERSONAS:
+
+URL: https://contact-management-83lp.vercel.app/login
+
+<img width="1244" height="673" alt="image" src="https://github.com/user-attachments/assets/1b65e249-dc7b-4ccc-aac7-c2cfcfa626ab" />
+
+## PERMISSION MATRIX: 
+
+<img width="697" height="750" alt="image" src="https://github.com/user-attachments/assets/c9de3b88-efe3-494c-b7d7-f241e5de097f" />
+
+## CONCLUSION:
+
+The Contract Management Platform project successfully delivered a modern, full-stack web application using industry-standard technologies, including React, Node.js, MongoDB, and JWT-based authentication. Developed within a cloud-based environment using the SCRUM agile methodology, the project progressed through four structured sprints, enabling a systematic transition from requirement analysis and system design to full implementation, integration, and final deployment. Continuous feedback, transparency, and iterative refinement were maintained throughout the development lifecycle. The final system provides a robust, role-based contract management platform that supports the complete contract lifecycle from creation and submission to multi-stage approval, provider collaboration, and final contract activation. The implementation of clearly defined user roles, including Client, Procurement Manager, Legal Counsel, Contract Coordinator, Service Provider, and Administrator, ensures secure access control and accountability at each stage of the workflow. The six-stage approval process, supported by audit logs and status tracking, enhances traceability and governance across all contract operations.
+
+
+
+
+
+
