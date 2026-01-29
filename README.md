@@ -92,19 +92,8 @@ npm run build
 The backend is built with Node.js and Express.js to provide REST APIs for contract workflows, authentication, and data operations. MongoDB is used as the primary NoSQL database, while Mongoose manages schemas, validation, and database queries. Security is handled using JWT for stateless authentication, bcryptjs for password hashing, helmet for secure HTTP headers, and express-validator to validate and sanitize incoming requests. Operational features such as activity logging and debugging are supported with winston, and email notifications (e.g., account actions or workflow updates) are enabled through nodemailer. On the frontend, the application is developed with React to deliver a responsive user interface. React Router manages navigation between pages, while Zustand provides lightweight state management for shared application data such as user sessions and workflow states. User input and forms are handled using React Hook Form, combined with Yup for schema-based validation to ensure correct and consistent data entry. The frontend communicates with the backend using Axios, and generates contract documents 
 using jsPDF. Additional utility libraries such as date-fns simplify date formatting and calculations, react-hot-toast provides real-time user feedback (success/error messages), and react-icons improves the overall UI experience.
 
-### Backend:
+<img width="712" height="498" alt="image" src="https://github.com/user-attachments/assets/2e205b42-c4b3-4c65-83ef-ce37ed378d7b" />
 
-| Technology  | Version | Purpose | 
-| --- | --- | --- |
-| Node.js  | >=18.0.0 | Runtime environment | 
-| UE2 | 001011234567892 | Internet | 
-| UE3 | 001011234567893 | Internet | 
-| UE4 | 001011234567894 | Internet | 
-| UE5 | 001011234567895 | Internet | 
-| UE6 | 001011234567896 | Internet | 
-| UE7 | 001011234567897 | Internet | 
-| UE8 | 001011234567898 | Internet | 
-| UE9 | 001011234567899 | Internet | 
-| UE10 | 001011234567810 | Internet |
 
+<img width="691" height="464" alt="image" src="https://github.com/user-attachments/assets/cc9ba080-8bdc-4514-95c6-d88ebe24d406" />
 
