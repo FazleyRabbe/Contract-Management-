@@ -1,4 +1,4 @@
-<h1 align="center"># Project Title: Contract Management Tool </h1>
+<h1 align="center"> Project Title: Contract Management Tool </h1>
 
 <h1 align="center">Group Member Name: </h1>
 <p align="center">
