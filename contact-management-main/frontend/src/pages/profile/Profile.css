@@ -1,0 +1,323 @@
+.profile-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.profile-header {
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.profile-header p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Avatar Card */
+.profile-avatar-card {
+  padding: 2rem;
+}
+
+.avatar-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-700) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.avatar-info h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.avatar-info .user-email {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.role-badge.role-admin {
+  background-color: var(--error-100);
+  color: var(--error-700);
+}
+
+.role-badge.role-client {
+  background-color: var(--primary-100);
+  color: var(--primary-700);
+}
+
+.role-badge.role-service_provider {
+  background-color: var(--success-100);
+  color: var(--success-700);
+}
+
+/* Profile Section */
+.profile-section {
+  padding: 1.5rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.section-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.section-header p {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  margin: 0.25rem 0 0 0;
+}
+
+.section-header button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Profile Info Display */
+.profile-info-display {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-item label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-item span {
+  font-size: 0.9375rem;
+  color: var(--gray-900);
+}
+
+/* Profile Form */
+.profile-form,
+.password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.phone-row {
+  grid-template-columns: 140px 1fr;
+}
+
+.country-code-select {
+  flex-shrink: 0;
+}
+
+.phone-input {
+  flex: 1;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.form-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Password field with toggle */
+.password-field {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 0.875rem;
+  top: 2.125rem;
+  background: none;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-toggle:hover {
+  color: var(--gray-600);
+}
+
+/* Password Requirements */
+.password-requirements {
+  background-color: var(--gray-50);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.password-requirements p {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  margin: 0 0 0.5rem 0;
+}
+
+.password-requirements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.25rem;
+}
+
+.password-requirements li {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.password-requirements li::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: var(--gray-400);
+  border-radius: 50%;
+}
+
+/* Password Info */
+.password-info {
+  background-color: var(--gray-50);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.password-info p {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.password-info .info-icon {
+  color: var(--gray-400);
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .profile-page {
+    padding: 1rem;
+  }
+
+  .avatar-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-row,
+  .info-row {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-row {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .section-header button {
+    align-self: flex-start;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .password-requirements ul {
+    grid-template-columns: 1fr;
+  }
+}
