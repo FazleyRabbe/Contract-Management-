@@ -1,3 +1,110 @@
-# Contract-Management-
-The Contract Management Platform project successfully delivered a modern, full-stack web application using industry-standard technologies, including React, Node.js, MongoDB, and JWT-based authentication. Developed within a cloud-based environment using the SCRUM agile methodology. 
+# Project Title: Contract Management Tool
+
+<h1 align="center">Group Member Name: </h1>
+<p align="center">
+   Md Fazley Rabbe (1502895)  <br>
+   Syed Tabish Talha Hassan (1502530)  <br>
+   Mahidul Islam Rana (1502217) <br>
+   Tusar Mozumder (1565539) <br>
+</p>
+<br/>
+
+## Introduction
+
+This project implements a Contract Management Tool developed as part of the Agile Development in Cloud Computing Environments course by a four-member SCRUM team (Oct 2025 – Jan 2026). The goal is to support the end-to-end lifecycle of contracts between a company and external service providers, from creation and negotiation to approval and activation.
+
+The system was developed using SCRUM, with requirements captured as user stories and tracked across structured sprints. It is implemented as a full-stack web application, consisting of a React frontend and a Node.js/Express backend that communicates via REST APIs and persists data in MongoDB using Mongoose. Security and reliability are enforced through middleware such as validation, rate limiting, sanitization, and role-based access control.
+
+A core feature of the tool is a multi-stage contract workflow, guiding contracts through drafting, procurement and legal review, provider offer submission, offer selection, final approval, and activation. Responsibilities are clearly assigned to defined roles (e.g., Client, Procurement Manager, Legal Counsel, Service Provider, Administrator), ensuring transparency, traceability, and auditability throughout the process.
+
+Overall, the project delivers a stable and demonstrable Contract Management Tool that applies agile principles, supports collaboration, and meets the functional and technical objectives of the course.
+
+
+## PROJECT IMPLEMENTATION: 
+Our Contract Management project was implemented as a full-stack web application, where the backend handles business logic, authentication, and database operations, and the frontend provides the user interface for interacting with contracts and workflows. The backend is built with Node.js and connects to MongoDB. It requires basic configuration through environment variables (e.g., database URI, JWT secret, frontend URL), then it can be initialized with sample data using a seeding script. During development, the backend runs on port 5000 and exposes REST APIs consumed by the frontend. The frontend is built with React and is configured to communicate with the backend via REACT_APP_API_URL. For deployment, the backend runs in production mode using npm start, while the frontend is compiled into an optimized static build (npm run build) that can be served using any static hosting/server setup. This separation of concerns makes the system easier to maintain, test, and deploy. 
+
+### Installation & Setup: 
+
+<details>
+<summary>Prerequisites:</summary>
+  
+- Node.js version ≥ 18.0.0 
+- MongoDB (local installation or MongoDB Atlas) 
+- npm or yarn as a package manager
+  
+</details>
+
+<details>
+<summary>Backend Setup Steps:</summary>
+  
+- Navigate into backend 
+- cd backend 
+- Install dependencies: 
+-   npm install 
+- Create environment file: 
+- cp .env.example .env 
+- Configure .env values (DB, JWT secret, frontend URL, etc.) 
+- Seed database with sample users/data: 
+- npm run seed 
+- Start the backend dev server: 
+- npm run dev 
+
+The backend runs on a configured PORT 5000 
+
+</details>
+
+<details>
+<summary>Frontend Setup Steps:</summary>
+  
+- Navigate into frontend 
+- cd frontend 
+- Install dependencies: 
+- npm install 
+- Set API URL env variable: 
+- REACT_APP_API_URL=http://localhost:5000/api 
+- Start the frontend: 
+-  npm start
+  
+Frontend connects to backend through REACT_APP_API_URL 
+
+</details>
+
+
+<details>
+<summary>Production Build / Run:</summary>
+  
+- Backend production run:
+  
+```bash
+npm start
+```
+- Frontend build:
+```bash
+npm run build
+```
+
+- Server build folder via static server 
+
+</details>
+
+## TECHNOLOGY STACK: 
+
+The backend is built with Node.js and Express.js to provide REST APIs for contract workflows, authentication, and data operations. MongoDB is used as the primary NoSQL database, while Mongoose manages schemas, validation, and database queries. Security is handled using JWT for stateless authentication, bcryptjs for password hashing, helmet for secure HTTP headers, and express-validator to validate and sanitize incoming requests. Operational features such as activity logging and debugging are supported with winston, and email notifications (e.g., account actions or workflow updates) are enabled through nodemailer. On the frontend, the application is developed with React to deliver a responsive user interface. React Router manages navigation between pages, while Zustand provides lightweight state management for shared application data such as user sessions and workflow states. User input and forms are handled using React Hook Form, combined with Yup for schema-based validation to ensure correct and consistent data entry. The frontend communicates with the backend using Axios, and generates contract documents 
+using jsPDF. Additional utility libraries such as date-fns simplify date formatting and calculations, react-hot-toast provides real-time user feedback (success/error messages), and react-icons improves the overall UI experience.
+
+### Backend:
+
+| Technology  | Version | Purpose | 
+| --- | --- | --- |
+| Node.js  | >=18.0.0 | Runtime environment | 
+| UE2 | 001011234567892 | Internet | 
+| UE3 | 001011234567893 | Internet | 
+| UE4 | 001011234567894 | Internet | 
+| UE5 | 001011234567895 | Internet | 
+| UE6 | 001011234567896 | Internet | 
+| UE7 | 001011234567897 | Internet | 
+| UE8 | 001011234567898 | Internet | 
+| UE9 | 001011234567899 | Internet | 
+| UE10 | 001011234567810 | Internet |
+
 
