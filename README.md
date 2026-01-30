@@ -111,7 +111,15 @@ This workflow diagram shows the contract lifecycle states and who acts at each s
 
 URL: https://contact-management-83lp.vercel.app/login
 
-<img width="1244" height="673" alt="image" src="https://github.com/user-attachments/assets/1b65e249-dc7b-4ccc-aac7-c2cfcfa626ab" />
+| Role | Username | Password | Name  |
+| --- | --- | --- | --- |
+| Admin | admin@contractmanagement.com | Admin@123 | Fazley Rabbe |
+| Client 1 | john.doe@example.com | Client@123 | John Doe |
+| Client 2 | jane.smith@example.com | Client@123 | Jane Smith |
+| Procurement Manager | procurement@contractmanagement.com | Procurement@123 | Syed Tabish Talha Hassan |
+| Legal Counsel | legal@contractmanagement.com | Legal@123 | Tusar Mozumder |
+| Contract Coordinator | coordinator@contractmanagement.com | Coordinator@123 | Mahidul Islam Rana |
+
 
 ## PERMISSION MATRIX: 
 
