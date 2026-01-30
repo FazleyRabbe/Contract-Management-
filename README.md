@@ -111,56 +111,14 @@ This workflow diagram shows the contract lifecycle states and who acts at each s
 
 URL: https://contact-management-83lp.vercel.app/login
 
-Adnin:
+Adnin
 
-User Id
-```
-admin@contractmanagement.com
-```
-Password
-```
-Admin@123
-```
-Procurement Manager:
+Procurement Manager
 
-User Id
-```
-procurement@contractmanagement.com
-```
-Password
-```
-Procurement@123
-```
-Legal Counsel:
+Legal Counsel
 
-User Id
-```
-legal@contractmanagement.com
-```
-Password
-```
-Legal@123
-```
-Contract Coordinator:
+Contract Coordinator
 
-User Id
-```
-coordinator@contractmanagement.com
-```
-Password
-```
-Coordinator@123
-```
-Client:
-
-User Id
-```
-john.doe@example.com
-```
-Password
-```
-Client@123
-```
 
 
 ## PERMISSION MATRIX: 
